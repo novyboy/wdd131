@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: lightskyblue;
+	--background-color: lightpink;
+}
+
+a {
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-weight: bold;
+}
+header {
+	position: sticky;
+	top: -4.5rem;
+}
+header > span {
+	height: 4.5rem;
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 1rem;
+	background: var(--primary-color);
+}
+header > nav {
+	display: flex;
+	flex-flow: row;
+}
+header > nav > a {
+	text-align: center;
+	flex: auto;
+	background: var(--background-color);
+	transition: background 0.15s ease-in-out;
+	padding: 1rem;
+}
+header > nav > a:hover {
+	background: var(--primary-color);
+}
+
+body {
+	min-height: 100vh;
+}
+main {
+	padding: 1rem;
+	align-self: center;
+	max-width: 60rem;
+}
+
+h1 {
+	text-align: center;
+}
+.grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 1rem;
+}
+.card {
+	display: flex;
+	flex-flow: column;
+	background: var(--background-color);
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.card figcaption {
+	text-align: center;
+	font-style: italic;
+}
+.card > div, .card > aside {
+	padding: 1rem;
+}
+.card > h2 {
+	padding: 1rem;
+	background: var(--primary-color);
+}
+.profile {
+	border-radius: 1rem;
+	width: 10rem;
+	height: 10rem;
+	object-fit: cover;
+}
+.flag {
+	width: 15rem;
+}
+.flex-column {
+	display: flex;
+	flex-flow: column;
+	gap: 1rem;
+	/*justify-content: center;
+	align-items: center;*/
+}
+.flex-row {
+	display: flex;
+	flex-flow: row;
+	gap: 1rem;
+	/*justify-content: center;
+	align-items: center;*/
+}
+li {
+	margin-left: 1rem;
+}
+
+footer {
+	background: var(--primary-color);
+	padding: 1rem;
+	text-align: center;
+	margin-top: auto;
+}
