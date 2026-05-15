@@ -73,16 +73,16 @@ header {
 		transition: gap 300ms, padding 300ms;
 		cursor: pointer;
 	}
-	.open + button > div:first-child {
+	.open + button > span:first-child {
 		rotate: 45deg;
 		transform-origin: bottom left;
 	}
 	
-	.open + button > div:not(:first-child,:last-child) {
+	.open + button > span:not(:first-child,:last-child) {
 		opacity: 0;
 	}
 	
-	.open + button > div:last-child {
+	.open + button > span:last-child {
 		transform-origin: top left;
 		rotate: -45deg;
 	}
@@ -91,7 +91,7 @@ header {
 		gap: 0.2rem;
 		padding: 0.4rem;
 	}
-	header > button > div {
+	header > button > span {
 		transition: opacity 150ms, rotate 300ms;
 		background: black;
 		width: 100%;
