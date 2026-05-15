@@ -34,8 +34,20 @@ header {
 }
 
 @media (max-width: 48rem) {
+	.temple img {
+		border-radius: 1rem;
+		width: 20rem;
+		height: 20rem;
+		object-fit: cover;
+	}
 	header > nav {
 		display: none;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1rem;
+		width: 100%;
 	}
 	.open {
 		display: flex;
@@ -93,27 +105,6 @@ header {
 		border-radius: 1rem;
 	}
 }
-@media (min-width: 48rem) {
-	header > button {
-		display: none;
-	}
-	
-	header > nav {
-		display: flex;
-		flex-flow: row;
-		flex: auto;
-	}
-	header > nav > a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		flex: auto;
-		background: var(--background-color);
-		transition: background 0.15s ease-in-out;
-		padding: 1rem;
-	}
-}
 
 header > nav > a:hover {
 	background: var(--primary-color);
@@ -130,12 +121,6 @@ main {
 h1 {
 	font-weight: bold;
 	text-align: center;
-}
-.temple img {
-	border-radius: 1rem;
-	width: 10rem;
-	height: 10rem;
-	object-fit: cover;
 }
 .temple figcaption {
 	text-align: center;
@@ -154,14 +139,6 @@ h1 {
 	gap: 1rem;
 	/*justify-content: center;
 	align-items: center;*/
-}
-.flex-wrap {
-	display: flex;
-	flex-flow: row;
-	flex-wrap: wrap;
-	gap: 1rem;
-	justify-content: center;
-	align-items: center;
 }
 footer {
 	background: var(--primary-color);
