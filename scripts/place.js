@@ -8,7 +8,9 @@ function calculateWindChill(temperature, windSpeed) {//fahrenheit
 	0.4275 * temperature * v16;
 	return windChill;
 }
-if (temperature <= 50 && windSpeed > 3) {
-	const windChill = calculateWindChill(temperature, windSpeed);
-	document.getElementById("windChill").innerHtml = windChill;
-}
+
+document.getElementById("temperature").innerText = `${temperature}°F`;
+document.getElementById("conditions").innerText = "Sunny";
+document.getElementById("windSpeed").innerText = `${windSpeed}mph`;
+const windChill = (temperature <= 50 && windSpeed > 3) ? `${calculateWindChill(temperature, windSpeed)}°F` : "N/A";
+document.getElementById("windChill").innerText = windChill;
