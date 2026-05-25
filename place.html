@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<base target="_top">
+	<title>Place - Hawaii</title>
+	<meta property="og:title" content="Place - Hawaii">
+	<meta name="description" content="Page describing Hawaii and its weather among other things">
+	<meta name="author" content="Nova Sonomura">
+	<meta property="og:description" content="Page describing Hawaii and its weather among other things">
+	<meta property="og:type" content="website">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:alt" content="Place - Hawaii">
+	
+	<link rel="stylesheet" href="styles/place.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Caveat:wght@400..700&family=Mali:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oi&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="">
+	<meta name="theme-color" content="">
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/place.js" defer></script>
+</head>
+<body class="flex-column">
+	<header>
+		<h1 id="title">Hawaii</h1>
+	</header>
+	<main class="flex-column">
+		<picture id="background">
+			<source srcset="images/hawaii-narrow.jpg" media="(max-width: 48rem)" />
+			<img src="images/hawaii-wide.jpg" alt="Hawaii" />
+		</picture>
+		<section class="card">
+			<h2>Data</h2>
+			<dl class="data">
+				<div>
+				  <dt>Area:</dt>
+				  <dd>10,931 sq mi (28,311 km²)</dd>
+				</div>
+				<div>
+				  <dt>Population:</dt>
+				  <dd>1,430,688</dd>
+				</div>
+				<div>
+				  <dt>Capital:</dt>
+				  <dd>Honolulu</dd>
+				</div>
+				<div>
+				  <dt>Languages:</dt>
+				  <dd>English, Hawaiian</dd>
+				</div>
+				<div>
+				  <dt>Currency:</dt>
+				  <dd>United States Dollar (USD)</dd>
+				</div>
+				<div>
+				  <dt>Time Zone:</dt>
+				  <dd>UTC−10</dd>
+				</div>
+				<div>
+				  <dt>Calling Code:</dt>
+				  <dd>+1 (808)</dd>
+				</div>
+				<div>
+				  <dt>Internet TLD:</dt>
+				  <dd>.us</dd>
+				</div>
+			</dl>
+		</section>
+		<section class="card">
+			<h2>Weather</h2>
+			<dl class="data">
+				<div>
+					<dt>Temperature:</dt>
+					<dd id="temperature"></dd>
+				</div>
+				<div>
+					<dt>Conditions:</dt>
+					<dd id="conditions"></dd>
+				</div>
+				<div>
+					<dt>Wind:</dt>
+					<dd id="windSpeed"></dd>
+				</div>
+				<div>
+					<dt>Wind Chill:</dt>
+					<dd id="windChill"></dd>
+				</div>
+			</dl>
+		</section>
+	</main>
+	<footer>
+		<p>
+			©︎<span id="currentYear"></span>
+			🌺 Nova Sonomura
+			🌺 Hawai ʻi
+		</p>
+		<p id="lastModified"></p>
+	</footer>
+</body>
+
+</html>
