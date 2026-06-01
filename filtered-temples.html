@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<base target="_top">
+	<title>Temple Photo Album - Home</title>
+	<meta property="og:title" content="Temple Photo Album - Home">
+	<meta name="description" content="Photo album consisting of temples for the Church of Jesus Christ of Latter-Day Saints">
+	<meta name="author" content="Nova Sonomura">
+	<meta property="og:description" content="Photo album consisting of temples for the Church of Jesus Christ of Latter-Day Saints">
+	<meta property="og:type" content="website">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:alt" content="Temple Photo Album - Home">
+	
+	<link rel="stylesheet" href="styles/filtered-temples.css">
+	<link rel="stylesheet" href="styles/filtered-temples-large.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Caveat:wght@400..700&family=Mali:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oi&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="">
+	<meta name="theme-color" content="">
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body class="flex-column">
+	<header>
+		<span id="title">Temple Album</span>
+		<nav id="nav">
+			<a id="home" href="#">Home</a>
+			<a id="old" href="#">Old</a>
+			<a id="new" href="#">New</a>
+			<a id="large" href="#">Large</a>
+			<a id="small" href="#">Small</a>
+		</nav>
+		<button id="hamburger" aria-label="hamburger menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</header>
+	<main class="flex-column">
+		<h1 id="galleryTitle">Home</h1>
+		<div id="gallery" class="grid">
+		</div>
+	</main>
+	<footer>
+		<p>
+			©︎<span id="currentYear"></span>
+			🌺 Nova Sonomura
+			🌺 Hawai ʻi
+		</p>
+		<p id="lastModified"></p>
+	</footer>
+</body>
+
+</html>
