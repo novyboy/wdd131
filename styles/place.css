@@ -106,7 +106,7 @@ main {
 #weather::after {
 	height: 2rem;
 	content: "";
-	background: url("/images/weather.svg") no-repeat center / contain;
+	background: url("./images/weather.svg") no-repeat center / contain;
 }
 
 footer {
