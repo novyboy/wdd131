@@ -30,14 +30,14 @@
 		<h1 id="title">Product Review Form</h1>
 	</header>
 	<main class="flex-column">
-		<form class="flex-column" method="get" action="/review.html">
+		<form class="flex-column" method="get" action="review.html">
 			<label for="productName">Product Name</label>
 			<select id="productName" name="productName" required>
-				<option disabled selected>Select a product...</option>
+				<option disabled selected value="">Select a product...</option>
 			</select>
 			
 			<fieldset id="overallRating">
-				<legend for="overallRating">Overall Rating</legend>
+				<legend>Overall Rating</legend>
 				<input type="radio" id="onestar" name="rating" value="1" required>
 				<label for="onestar">★</label>
 				<input type="radio" id="twostar" name="rating" value="2" required>
@@ -52,9 +52,9 @@
 			<label for="date">
 				Date of Installation
 			</label>
-			<input type="date" id="date" name="date" required/>
+			<input type="date" id="date" name="date" required>
 			<fieldset id="usefulFeatures" class="flex-column">
-				<legend for="usefulFeatures">What features did you find useful in the product? (check all that apply)</legend>
+				<legend>What features did you find useful in the product? (check all that apply)</legend>
 				<label for="durability"><input type="checkbox" id="durability" name="feature" value="durability"/>
 				Durability</label>
 				<label for="easeOfUse"><input type="checkbox" id="easeOfUse" name="feature" value="easeOfUse"/>
@@ -69,9 +69,9 @@
 			<textarea id="review" name="review" placeholder="Enter review here..."></textarea>
 			
 			<label for="name">Your Name</label>
-			<input type="text" id="name" name="name" placeholder="Enter name here..."/>
+			<input type="text" id="name" name="name" placeholder="Enter name here...">
 			
-			<input type="submit" value="Post Review"/>
+			<input type="submit" value="Post Review">
 		</form>
 	</main>
 	<footer>
