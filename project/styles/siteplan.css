@@ -59,7 +59,8 @@ h1 {
 	text-align: center;
 }
 
-.swatch {
+.swatch::after {
+	content: " ";
 	display: block;
 	height: 5rem;
 	width: 5rem;
@@ -69,22 +70,22 @@ h1 {
 	flex: 1 1 0;
 	align-self: end;
 }
-.primaryColor {
+.primaryColor::after {
 	background-color: var(--site-primary-color);
 }
 
-.secondaryColor {
+.secondaryColor::after {
 	background-color: var(--site-secondary-color);
 }
 
-.accentColor {
+.accentColor::after {
 	background-color: var(--site-accent-color);
 }
-.textColor {
+.textColor::after {
 	background-color: var(--site-text-color);
 }
 
-.backgroundColor {
+.backgroundColor::after {
 	background-color: var(--site-background-color);
 }
 
