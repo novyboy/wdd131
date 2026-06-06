@@ -60,6 +60,7 @@ h1 {
 }
 
 .swatch {
+	display: block;
 	height: 5rem;
 	width: 5rem;
 	border-radius: 1rem;
