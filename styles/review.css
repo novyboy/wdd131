@@ -44,7 +44,7 @@ main {
 	flex-flow: column;
 	gap: 1rem;
 }
-#confirmation {
+#confirmation, #reviewCount {
 	text-align: center;
 	font-size: 2rem;
 }
