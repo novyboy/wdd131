@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<base target="_top">
+	<title>Nova's Novels</title>
+	<meta property="og:title" content="Nova's Novels">
+	<meta name="description" content="Nova's Novels – Home to novels and the such by Nova.">
+	<meta name="author" content="Nova Sonomura">
+	<meta property="og:description" content="Nova's Novels – Home to novels and the such by Nova.">
+	<meta property="og:type" content="website">
+	<!--
+	<meta property="og:image" content="Image">
+	<meta property="og:url" content="URL">
+	<meta property="og:site_name" content="Site Name">
+	-->
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:alt" content="Nova's Novels – Home to novels and the such by Nova.">
+	
+	<!--	
+	<link rel="icon" href="images/favicon.ico" type="image/ico" sizes="32x32">
+	<link rel="apple-touch-icon" href="images/favicon-180.webp" sizes="180x180">
+	<link rel="shortcut icon" href="images/favicon-192.webp" sizes="192x192">
+	<link rel="apple-touch-icon" href="images/favicon-512.webp" sizes="512x512">
+	-->
+	
+	<link rel="stylesheet" href="styles/novels.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="">
+	<meta name="theme-color" content="">
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/novels.js" defer></script>
+</head>
+<body class="flex-column">
+	<header class="flex-row">
+		<span id="title">Nova's Novels</span>
+		<nav class="flex-row">
+			<a href="/">Home</a>
+			<a href="#aboutLink">About</a>
+			<a href="#novelsLink">Novels</a>
+		</nav>
+	</header>
+	<main class="flex-column">
+		<h1>Home</h1>
+		<section class="flex-row card">
+			<div class="flex-column">
+				<h2 id="#aboutLink">About</h2>
+				<p>Aloha! My name is Nova Sonomura! I'm from Honolulu, Hawai ʻi. I enjoy playing piano, drawing, writing, and doing anything creative. I recently served full-time in the Japan Kobe Mission, and I am now living in my first area, Okayama.</p>
+			</div>
+			<img id="profile" src="images/profile.jpg" alt="Image of Nova Sonomura" loading="lazy">
+		</section>
+		
+		<section class="flex-column card">
+			<h2 id="#novelsLink">Novels</h2>
+			<nav id="novels" class="flex-row">
+			</nav>
+		</section>
+		
+		<section class="flex-column card">
+			<h2>Sign-Up for Chapter Updates</h2>
+			<form id="signup" method="get" class="flex-row">
+				<label for="email">Email</label>
+				<input id="email" type="email" name="email"/>
+				<button type="submit">Subscribe</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>
+			©︎<span id="currentYear"></span>
+			🌺 Nova Sonomura
+			🌺 Hawai ʻi
+		</p>
+		<p id="lastModified"></p>
+	</footer>
+</body>
+
+</html>
